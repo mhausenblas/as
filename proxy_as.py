@@ -1,10 +1,9 @@
 from BaseHTTPServer import BaseHTTPRequestHandler
-import urlparse, urllib
-import string, cgi, time
+import urlparse, urllib, urllib, string, cgi, time
 from os import curdir, sep
 
 class ProxyASHandler(BaseHTTPRequestHandler):
-	
+
 	def do_GET(self):
 		parsed_path = urlparse.urlparse(self.path)
 		target_url = parsed_path.path[1:]

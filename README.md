@@ -20,6 +20,13 @@ and then just launch it:
 
 ![Screen-shot of the as](https://github.com/mhausenblas/as/raw/master/doc/as-screenshot.png "Screen-shot of the as")
 
+## Fill the data store
+
+There is no fancy way to get data into the CouchDB implemented here. I assume a CSV file locally (see `as-input.csv`) that is imported into CouchDB like so:
+
+	./launch-as.sh create
+
+... which in turn uses another Python script to read the CSV and create one-by-one CouchDB documents for each row in the CSV. It creates the database if it's not there, no problem, but in order to get the search functionality you need to manually enable indexing on the database (see `https://cloudant.com/#!/dashboard/{account}/{database}/search`).
 
 ## License
 Public domain.

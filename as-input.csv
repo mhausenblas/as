@@ -1,0 +1,3 @@
+_id,acronym,fulltitle,ref
+acid,ACID,"atomicity, consistency, isolation, durability",http://en.wikipedia.org/wiki/ACID
+base,BASE,"basically available, soft state, eventually consistent",http://queue.acm.org/detail.cfm?id=1394128
